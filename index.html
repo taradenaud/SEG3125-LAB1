@@ -1,1 +1,117 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title> Tara Denaud Joseph - Lab 1 Survey</title>
+</head>
+<body>
+	<form id="myform" action="index.php" >
+		<br>
+		<br>
+        <h1>Survey</h1>
+		<!-- <! Choose a website to evaluate > -->
+		<h2 id="text">What do you think of the UI in this <a href="https://www.sanrio.com">Sanrio</a> site?</h2>	
+		<br>
+		<br>
+		<!-- <! You should make your image clickable> -->
+		<div id="image"><a href="https://www.sanrio.com"><img src="images/sanrio.png" alt="https://www.sanrio.com" width="450" height="300"></a></div>
+		<br>
+		<br>
+        
+		<!--Question One-->
+		<div class="question">
+		<h3> Question 1: What do you think about Sanrio? </h3>
+		<p>Thoughts: <input type="text" name="thoughts"></p>
+		<br>
+		</div>	
+
+		<!--Question Two-->
+		<div class="question">
+			<h3> Question 2: What do you like most about the website?</h3>
+			I like:<br>
+			<select name ="color" id="color">
+				<option value="pick" selected="selected">Pick One</option>
+				<option value="accessibility">The Accessibility Feature </option>
+				<option value="toolbar">The Toolbar</option>
+				<option value="background">The Background</option>
+				<option value="layout">The Layout</option>
+			</select>
+			<br>
+			<br> 
+		</div>
+
+		<!--Question Three-->
+		<div class="question">
+		<h3> Question 3: Who is your favorite Sanrio character? </h3>
+			<input type="radio" name="character" value="Hello Kitty">Hello Kitty<br>
+			<input type="radio" name="character" value="My Melody">My Melody<br>
+			<input type="radio" name="character" value="Cinnamoroll">Cinnamoroll<br>
+			<input type="radio" name="character" value="Kuromi">Kuromi<br>
+			<input type="radio" name="character" value="Pompompurin">Pompompurin<br>
+			<input type="radio" name="character" value="Other">Other<br>
+		<br>
+		</div>
+
+    
+
+		<!--Question Four-->
+
+		<div class="question">
+			<h3> Question 4: Out of 5, How would you rate the overall ease of use of our interface? </h3>
+				<input type="radio" name="rating" value="5">5<br>
+				<input type="radio" name="rating" value="4">4<br>
+				<input type="radio" name="rating" value="3">3<br>
+				<input type="radio" name="rating" value="2">2<br>
+				<input type="radio" name="rating" value="1">1<br>
+				<br> 
+		</div>
+
+		<!--Question Five-->
+		<div class="question">
+			<h3>Question 5: What do you enjoy most about this website? What do you dislike about this website?</h3>
+            <textarea rows="5" cols="40" name="favoritebox"></textarea>
+			<br>
+			<br>
+		</div>
+		
+
+		<!--Question Six-->
+		<div class="question">
+			<h3>Question 6: What are the items you look for the most on the website? </h3>
+			<h4>(You can select more than one choice)</h4>
+            <input type="checkbox" name="character merchandise" value="character merchandise">
+            <label for="character merchandise">Character Merchandise</label><br>
+            <input type="checkbox" name="apparel" value="apparel">
+            <label for="apparel">Apparel</label><br>
+            <input type="checkbox" name="plushAndToys" value="plushAndToys">
+            <label for="plushAndToys">Plush & Toys</label><br>
+            <input type="checkbox" name="homeItems" value="homeItems">
+            <label for="homeItems">Home Items</label><br>
+            <input type="checkbox" name="saleItems" value="saleItems">
+            <label for="saleItems">Sale Items</label><br>
+			<br> 
+		</div>
+
+		<!--Comments!-->
+		<h3>Comments:</h2>
+		
+		<div class="question">
+			<textarea rows="5" cols="50"></textarea>
+		</div>
+		
+				
+		<br>
+		<br>
+				
+		<button id="submitButton" type="button" class="block">
+			SUBMIT your questionnaire
+		</button>
+			
+		<p id="signature">Site created Tara Denaud Joseph</p>	
+		
+		</form>
+</body>
+</html>
